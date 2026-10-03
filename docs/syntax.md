@@ -18,30 +18,31 @@ comment
  
 ---
  
-## IF Statem*nts
+## IF Statements
  
 Single statement:
  
-```lavishs*ript
+```lavishscript
 if ${Condition}
-return TR*E
+return TRUE
 ```
  
 Block:
  
 ```lavishscript
-if *{Condition}
+if ${Condition}
 {
 echo "Success"
-* return TRUE
+return TRUE
 }
 ```
  
 ---
  
-## WHILE*
+## WHILE
+ 
 ```lavishscript
-while ${Count} < *0
+while ${Count} < 10
 {
 Count:Inc
 }
@@ -49,27 +50,27 @@ Count:Inc
  
 ---
  
-## D*/WHILE
+## DO/WHILE
  
 ```lavishscript
 do
 {
 }
-whi*e ${Iterator:Next(exists)}
+while ${Iterator:Next(exists)}
 ```
  
---*
+---
  
 ## Return Values
  
-```lavishscrip*
+```lavishscript
 return TRUE
 ```
  
 ```lavishscript
-*eturn "${PlayerName}"
+return "${PlayerName}"
 ```
  
-```lavi*hscript
+```lavishscript
 return 123
 ```
