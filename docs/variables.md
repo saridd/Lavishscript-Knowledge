@@ -1,12 +1,14 @@
-# Variables*
+# Variables
+ 
 ## Declaration
  
 ```lavishscript
 variable int Count = 0
 ```
  
-```lavis*script
-variable bool Found = FALSE*```
+```lavishscript
+variable bool Found = FALSE
+```
  
 ```lavishscript
 variable string Name = ""
@@ -14,18 +16,19 @@ variable string Name = ""
  
 ---
  
-## Scope Rul*s
+## Scope Rules
  
 Variables are function scoped.
-*They are NOT block scoped.
+ 
+They are NOT block scoped.
  
 Bad:
  
-*``lavishscript
+```lavishscript
 while ${Condition}
-*
+{
 variable string ChosenLooter
-*
+}
 ```
  
 Result:
@@ -36,7 +39,8 @@ Variable named 'ChosenLooter' already exists in scope
  
 Good:
  
-```lavishscript variable string ChosenLooter
+```lavishscript
+variable string ChosenLooter
  
 while ${Condition}
 {
@@ -51,7 +55,7 @@ while ${Condition}
 variable(global) int Counter = 0
 ```
  
--*-
+---
  
 ## Set()
  
