@@ -1,5 +1,5 @@
-# Lavishscript-Knowledge
-
+# LavishScript Knowledge Base
+ 
 A structured knowledge base for LavishScript, InnerSpace, ISXEQ2, and project-specific automation patterns.
  
 This repository serves four purposes:
